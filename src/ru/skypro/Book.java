@@ -1,8 +1,8 @@
 package ru.skypro;
 
 public class Book {
-    String nameBook;
-    Author bookAuthor;
+    private String nameBook;
+    private Author bookAuthor;
     int pubDay;
 
     public Book(String nameBook, Author bookAuthor, int pubDay){
@@ -18,5 +18,8 @@ public class Book {
     }
     public void setPubDay(int pubDay){
         this.pubDay = pubDay;
+    }
+    public String toString(){
+        return "[" + this.nameBook + " " + this.bookAuthor + " " + this.pubDay + "]";
     }
 }

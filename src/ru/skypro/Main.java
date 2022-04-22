@@ -11,14 +11,20 @@ public class Main {
        sarah.setAge(31);
       System.out.println("sarah.getAge() = " + sarah.getAge());
       Person john = new Person("John", 13);
+        System.out.println();
       /////////// example
 
         Author author = new Author("Сергей", "Трифанов");
-        System.out.println(author.getFirstName() + " " + author.getSecondName());
+        System.out.println("author " + author);
         Author author1 = new Author("Александр", "Сапунов");
-        System.out.println(author1.getFirstName()+ " " + author1.getSecondName());
+        System.out.println("author " + author1);
+
 
         Book nameBook = new Book("эти ошибки", author, 2022);
-        System.out.println(nameBook.getNameBook()+ author + nameBook.pubDay);
+        nameBook.setPubDay(2020);
+        System.out.println("nameBook = " + nameBook);
+        Book nameBook1 = new Book("кто я", author1, 2019);
+        System.out.println("nameBook1 = " + nameBook1);
+        System.out.println();
     }
 }
