@@ -15,6 +15,7 @@ public class Book {
         return pubDay == book.pubDay && nameBook.equals(book.nameBook);
     }
 
+
     @Override
     public int hashCode() {
         return Objects.hash(nameBook, pubDay);
